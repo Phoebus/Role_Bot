@@ -71,4 +71,4 @@ async def on_raw_reaction_remove(payload):
             role = discord.utils.get(guild.roles, name="Programmer")
             await member.remove_roles(role)
 
-client.run('OTgxNjQ3NzM0ODk5NjMwMTQw.GiFcHX.kCVR0W4FscbT1o4AinWWXj0ccW711YiPfiXz9A')
+client.run()
