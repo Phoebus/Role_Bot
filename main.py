@@ -1,5 +1,6 @@
 import discord
 import os
+from keep_alive import keep_alive
 
 intents = discord.Intents.default()
 intents.members = True
@@ -71,4 +72,5 @@ async def on_raw_reaction_remove(payload):
             role = discord.utils.get(guild.roles, name="Programmer")
             await member.remove_roles(role)
 
-client.run()
+keep_alive()
+client.run(os.getenv("TOKEN"))
